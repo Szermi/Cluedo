@@ -14,6 +14,6 @@ public class MurderItemsController : MonoBehaviour
     void Update()
     {
         // Rotate the object
-        this.transform.Rotate(0.0f, 10.0f, 0.0f, Space.Self);
+        this.transform.Rotate(0.0f, 0.0f, 5.0f, Space.Self);
     }
 }

@@ -22,9 +22,12 @@ public class PlayerControler : MonoBehaviour
     //Zakres patrzenia w górę i dół.
     public float zakresMyszyGoraDol = 90.0f;
 
+    private Rigidbody rb;
+
     // Use this for initialization
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
         characterControler = GetComponent<CharacterController>();
     }
 

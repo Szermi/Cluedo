@@ -56,8 +56,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\MurderItemsController.cs" />
+     <Compile Include="Assets\Scripts\PickUp.cs" />
      <Compile Include="Assets\Scripts\PlayerControler.cs" />
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
+     <None Include="Assets\laxer tree pkg\README.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>F:/Projects/Unity/Cluedo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

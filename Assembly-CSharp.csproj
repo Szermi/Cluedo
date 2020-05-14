@@ -108,6 +108,7 @@
      <Compile Include="Assets\NVJOB Water Shader SAF\Water Shader\WindZoneRot.cs" />
      <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\Scripts\BottleRotation.cs" />
+     <Compile Include="Assets\Scripts\DoorOpen.cs" />
      <Compile Include="Assets\Scripts\MurderItemsController.cs" />
      <Compile Include="Assets\Scripts\PickUp.cs" />
      <Compile Include="Assets\Scripts\PlayerControler.cs" />

@@ -3,7 +3,6 @@ using System.Collections;
 
 public class PlayerControler : MonoBehaviour
 {
-
     //Obiekt odpowiedzialny za ruch gracza.
     public CharacterController characterControler;
 
@@ -23,6 +22,11 @@ public class PlayerControler : MonoBehaviour
     public float zakresMyszyGoraDol = 90.0f;
 
     private Rigidbody rb;
+
+    // miejsce w ktorym znajduje sie gracz
+    [HideInInspector]
+    public string place = "moving";
+
 
     // Use this for initialization
     void Start()

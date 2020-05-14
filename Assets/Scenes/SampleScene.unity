@@ -610,6 +610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e236802ff6ddbfe498f1efaea3fa519b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: Hache
+  player: {fileID: 789683772}
 --- !u!64 &510707707
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1013,6 +1015,7 @@ MonoBehaviour:
   myszGoraDol: 0
   zakresMyszyGoraDol: 90
   place: 
+  itemList: []
 --- !u!143 &789683773
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1637,6 +1640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e236802ff6ddbfe498f1efaea3fa519b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: hammer
+  player: {fileID: 789683772}
 --- !u!1 &1191988416 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100088, guid: 8d44a8bf542ec854ab6a6c818ea10b8a,
@@ -3059,6 +3064,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e236802ff6ddbfe498f1efaea3fa519b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: bottle
+  player: {fileID: 789683772}
 --- !u!114 &2654868003538808334
 MonoBehaviour:
   m_ObjectHideFlags: 0

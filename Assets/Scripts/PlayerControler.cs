@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerControler : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class PlayerControler : MonoBehaviour
     [HideInInspector]
     public string place = "moving";
 
+    [HideInInspector]
+    public List<string> itemList = new List<string>();
 
     // Use this for initialization
     void Start()

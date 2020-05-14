@@ -328,6 +328,51 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 56c3f2cbc110c05439c69b40ceb13e3a, type: 3}
+--- !u!1 &181624726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 181624727}
+  - component: {fileID: 181624728}
+  m_Layer: 0
+  m_Name: WaterCollider3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &181624727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181624726}
+  m_LocalRotation: {x: -0, y: -0.70802736, z: -0, w: 0.70618504}
+  m_LocalPosition: {x: 70.7, y: 3.6, z: -2.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1424904326}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -90.149, z: 0}
+--- !u!136 &181624728
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181624726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 26.957878
+  m_Height: 94.46926
+  m_Direction: 0
+  m_Center: {x: 12.380417, y: 0, z: 42.250477}
 --- !u!1001 &207859299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1930,6 +1975,51 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5fa7a52706a4c37469f3baf5a0cc99d4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f04f08f0e3481fb47876052b5f7f23b3, type: 3}
+--- !u!1 &1318267506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1318267507}
+  - component: {fileID: 1318267508}
+  m_Layer: 0
+  m_Name: WaterCollider1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1318267507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318267506}
+  m_LocalRotation: {x: -0, y: -0.061963506, z: -0, w: 0.99807847}
+  m_LocalPosition: {x: 7.4194946, y: 3.6, z: -36.871056}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1424904326}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -7.1050005, z: 0}
+--- !u!136 &1318267508
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318267506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 17.334053
+  m_Height: 103.61882
+  m_Direction: 0
+  m_Center: {x: -7.173607, y: 0, z: 15.923623}
 --- !u!1001 &1379170230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2144,7 +2234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1424904326}
   m_Layer: 0
-  m_Name: WaterCollider
+  m_Name: WaterColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2160,7 +2250,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 306.7, y: 0, z: 160.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1318267507}
+  - {fileID: 1823457920}
+  - {fileID: 181624727}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2660,6 +2753,51 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300070, guid: 8d44a8bf542ec854ab6a6c818ea10b8a, type: 3}
+--- !u!1 &1823457919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1823457920}
+  - component: {fileID: 1823457921}
+  m_Layer: 0
+  m_Name: WaterCollider2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1823457920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823457919}
+  m_LocalRotation: {x: -0, y: -0.3256459, z: -0, w: 0.9454918}
+  m_LocalPosition: {x: 18.8, y: 3.6, z: -4.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1424904326}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -38.009003, z: 0}
+--- !u!136 &1823457921
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823457919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 24.071033
+  m_Height: 119.51447
+  m_Direction: 0
+  m_Center: {x: -2.6361823, y: 0, z: 23.571026}
 --- !u!1 &1859944669 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100056, guid: 8d44a8bf542ec854ab6a6c818ea10b8a,

@@ -12,14 +12,17 @@ public class PlacesController : MonoBehaviour
         beach
     }
 
-    public PlayerControler player;
+    public HeroController player;
 
     public Place place;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
+        {
             player.place = place.ToString();
+            print(place.ToString());
+        }
     }
 
     private void OnTriggerExit(Collider other)

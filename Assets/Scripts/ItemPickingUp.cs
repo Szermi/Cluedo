@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUp : MonoBehaviour
+public class ItemPickingUp : MonoBehaviour
 {
     public string itemName;
 
-    public PlayerControler player;
+    public HeroController player;
 
     private void OnTriggerEnter(Collider other)
     {

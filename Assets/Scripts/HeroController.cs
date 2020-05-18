@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class PlayerControler : MonoBehaviour
+public class HeroController : MonoBehaviour
 {
     //Obiekt odpowiedzialny za ruch gracza.
     public CharacterController characterControler;

@@ -353,7 +353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181624726}
   m_LocalRotation: {x: -0, y: -0.70802736, z: -0, w: 0.70618504}
-  m_LocalPosition: {x: 70.7, y: 3.6, z: -2.1}
+  m_LocalPosition: {x: 75.6, y: 3.6, z: -2.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1424904326}
@@ -369,8 +369,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 26.957878
-  m_Height: 94.46926
+  m_Radius: 20.29
+  m_Height: 91
   m_Direction: 0
   m_Center: {x: 12.380417, y: 0, z: 42.250477}
 --- !u!1001 &207859299
@@ -607,10 +607,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 510707702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e236802ff6ddbfe498f1efaea3fa519b, type: 3}
+  m_Script: {fileID: 11500000, guid: bb1ba6c8b682c064089eb2ac44ad8848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Hache
+  itemName: 
   player: {fileID: 789683772}
 --- !u!64 &510707707
 MeshCollider:
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 510707702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81473794028fd1349a7feb5526f174f4, type: 3}
+  m_Script: {fileID: 11500000, guid: d36b6c8e29f50c04880f661d6823a9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &510707709
@@ -940,8 +940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a32442c74660c0c49b2d554b58b85974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 789683772}
-  place: 1
+  player: {fileID: 0}
+  place: 0
 --- !u!65 &725166271
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -985,8 +985,8 @@ GameObject:
   m_Component:
   - component: {fileID: 789683774}
   - component: {fileID: 789683773}
-  - component: {fileID: 789683772}
   - component: {fileID: 789683775}
+  - component: {fileID: 789683772}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Player
@@ -1010,11 +1010,11 @@ MonoBehaviour:
   predkoscPoruszania: 9
   wysokoscSkoku: 7
   aktualnaWysokoscSkoku: 0
-  predkoscBiegania: 10
+  predkoscBiegania: 7
   czuloscMyszki: 3
   myszGoraDol: 0
   zakresMyszyGoraDol: 90
-  place: 
+  place: moving
   itemList: []
 --- !u!143 &789683773
 CharacterController:
@@ -1612,9 +1612,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1185898342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81473794028fd1349a7feb5526f174f4, type: 3}
+  m_Script: {fileID: 11500000, guid: bb1ba6c8b682c064089eb2ac44ad8848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: 
+  player: {fileID: 789683772}
 --- !u!65 &1185898348
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1637,11 +1639,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1185898342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e236802ff6ddbfe498f1efaea3fa519b, type: 3}
+  m_Script: {fileID: 11500000, guid: d36b6c8e29f50c04880f661d6823a9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: hammer
-  player: {fileID: 789683772}
 --- !u!1 &1191988416 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100088, guid: 8d44a8bf542ec854ab6a6c818ea10b8a,
@@ -2005,7 +2005,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318267506}
   m_LocalRotation: {x: -0, y: -0.061963506, z: -0, w: 0.99807847}
-  m_LocalPosition: {x: 7.4194946, y: 3.6, z: -36.871056}
+  m_LocalPosition: {x: 7.4194946, y: 3.6, z: -36.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1424904326}
@@ -2021,7 +2021,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 17.334053
+  m_Radius: 20.88
   m_Height: 103.61882
   m_Direction: 0
   m_Center: {x: -7.173607, y: 0, z: 15.923623}
@@ -2259,6 +2259,7 @@ Transform:
   - {fileID: 1318267507}
   - {fileID: 1823457920}
   - {fileID: 181624727}
+  - {fileID: 1747036698}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2692,6 +2693,51 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300110, guid: 8d44a8bf542ec854ab6a6c818ea10b8a, type: 3}
+--- !u!1 &1747036697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1747036698}
+  - component: {fileID: 1747036699}
+  m_Layer: 0
+  m_Name: WaterCollider4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1747036698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747036697}
+  m_LocalRotation: {x: -0, y: -0.3256459, z: -0, w: 0.9454918}
+  m_LocalPosition: {x: -5.2, y: 3.6, z: 4.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1424904326}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -38.009003, z: 0}
+--- !u!136 &1747036699
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747036697}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 7.4
+  m_Height: 55.3
+  m_Direction: 0
+  m_Center: {x: -2.6361823, y: 0, z: 23.571026}
 --- !u!1 &1778553952 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 8d44a8bf542ec854ab6a6c818ea10b8a,
@@ -2783,7 +2829,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823457919}
   m_LocalRotation: {x: -0, y: -0.3256459, z: -0, w: 0.9454918}
-  m_LocalPosition: {x: 18.8, y: 3.6, z: -4.9}
+  m_LocalPosition: {x: 17.1, y: 3.6, z: -8.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1424904326}
@@ -2799,8 +2845,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 24.071033
-  m_Height: 119.51447
+  m_Radius: 25.7
+  m_Height: 122.4
   m_Direction: 0
   m_Center: {x: -2.6361823, y: 0, z: 23.571026}
 --- !u!1 &1859944669 stripped
@@ -3043,8 +3089,8 @@ GameObject:
   - component: {fileID: 689594532954183042}
   - component: {fileID: 5715182679685501161}
   - component: {fileID: 46068206}
-  - component: {fileID: 2654868003538808333}
   - component: {fileID: 2654868003538808334}
+  - component: {fileID: 2654868003538808333}
   m_Layer: 0
   m_Name: Botella
   m_TagString: Collectable
@@ -3061,10 +3107,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2654868003538808332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e236802ff6ddbfe498f1efaea3fa519b, type: 3}
+  m_Script: {fileID: 11500000, guid: bb1ba6c8b682c064089eb2ac44ad8848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: bottle
+  itemName: 
   player: {fileID: 789683772}
 --- !u!114 &2654868003538808334
 MonoBehaviour:

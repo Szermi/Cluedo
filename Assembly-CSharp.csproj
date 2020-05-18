@@ -113,6 +113,9 @@
      <Compile Include="Assets\Scripts\ItemPickingUp.cs" />
      <Compile Include="Assets\Scripts\ItemRotation.cs" />
      <Compile Include="Assets\Scripts\PlacesController.cs" />
+     <Compile Include="Assets\torch\scene\script\TorchSlider.cs" />
+     <Compile Include="Assets\torch\scene\script\Torchslider2.cs" />
+     <Compile Include="Assets\torch\scripts\Torchelight.cs" />
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
      <None Include="Assets\NVJOB Water Shader SAF\license_nvjob.txt" />
@@ -120,6 +123,7 @@
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\Dynamic Sky Lite\Dynamic Sky Lite Standard Clouds Type 2.shader" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Resources\Shaders\GrainGen.shader" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+     <None Include="Assets\torch\readme.txt" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Resources\Shaders\FXAA3.cginc" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
@@ -133,6 +137,7 @@
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Resources\Shaders\TAA.cginc" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\Dynamic Sky Lite\Dynamic Sky Lite Standard Horizon.shader" />
+     <None Include="Assets\stylezed low poly props\README.txt" />
      <None Include="Assets\laxer tree pkg\README.txt" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\Materials\Trees\STCustomCore.cginc" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />

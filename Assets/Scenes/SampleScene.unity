@@ -2644,7 +2644,7 @@ MonoBehaviour:
   predkoscPoruszania: 9
   wysokoscSkoku: 7
   aktualnaWysokoscSkoku: 0
-  predkoscBiegania: 15
+  predkoscBiegania: 10
   czuloscMyszki: 3
   myszGoraDol: 0
   zakresMyszyGoraDol: 90

@@ -9,7 +9,10 @@ public class PlacesController : MonoBehaviour
     {
         moving,
         shed,
-        beach
+        beach,
+        house,
+        cementary,
+        park
     }
 
     public HeroController player;

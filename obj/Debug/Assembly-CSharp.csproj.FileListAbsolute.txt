@@ -1,0 +1,2 @@
+F:\Projects\Unity\Cluedo\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+F:\Projects\Unity\Cluedo\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

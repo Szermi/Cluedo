@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class ItemPickingUp : MonoBehaviour
 {
     public string itemName;
-    public static int counter = 0;
 
     public HeroController player;
     public Text text;
@@ -15,9 +14,8 @@ public class ItemPickingUp : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            counter++;
-            text.text = "Przedmioty: " + counter.ToString() + "/6";
-            player.itemList.Add(itemName);
+            player.itemsList.Add(itemName);
+            text.text = "Przedmioty: " + player.itemsList.Count + "/6";
             Destroy(gameObject);
 
 

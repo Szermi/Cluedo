@@ -29,7 +29,11 @@ public class HeroController : MonoBehaviour
     public string place = "moving";
 
     [HideInInspector]
-    public List<string> itemList = new List<string>();
+    public SortedSet<string> itemsList = new SortedSet<string>();
+    [HideInInspector]
+    public SortedSet<string> placesList = new SortedSet<string>();
+    [HideInInspector]
+    public SortedSet<string> peopleList = new SortedSet<string>();
 
     // Use this for initialization
     void Start()

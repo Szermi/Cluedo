@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class PlacesController : MonoBehaviour
 {
-    public static int counter = 0;
     // lista dostępnych miejsc
     public enum Place
     {
@@ -27,8 +26,9 @@ public class PlacesController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            counter++;
-            text.text = "Miejsca: " + counter.ToString() + "/6";
+
+            player.placesList.Add(place.ToString());
+            text.text = "Miejsca: " + player.placesList.Count + "/6";
             player.place = place.ToString();
             print(place.ToString());
 

@@ -113,6 +113,7 @@
      <Compile Include="Assets\Scripts\HeroController.cs" />
      <Compile Include="Assets\Scripts\ItemPickingUp.cs" />
      <Compile Include="Assets\Scripts\ItemRotation.cs" />
+     <Compile Include="Assets\Scripts\ItemsRemoving.cs" />
      <Compile Include="Assets\Scripts\PlacesController.cs" />
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />

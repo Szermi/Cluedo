@@ -7,16 +7,26 @@ public class ItemPickingUp : MonoBehaviour
 {
     public string itemName;
 
-    public HeroController player;
-    public Text text;
+    private HeroController player;
+    private Text text;
+
+    void Start()
+    {
+        player = GameObject.Find("Hero").GetComponent<HeroController>();
+        text = GameObject.Find("TextItems").GetComponent<Text>();
+    }
+
+    void Update()
+    {
+        text.text = "Przedmioty: " + player.itemsList.Count + "/6";
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
             player.itemsList.Add(itemName);
-            text.text = "Przedmioty: " + player.itemsList.Count + "/6";
-            Destroy(gameObject);
+            Destroy(gameObject,.5f);
 
 
 

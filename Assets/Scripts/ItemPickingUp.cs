@@ -39,6 +39,21 @@ public class ItemPickingUp : MonoBehaviour
                         textInfo.text = "Podniesiono butelkę";
                         break;
                     }
+                case "Knife":
+                    {
+                        textInfo.text = "Podniesiono nóż";
+                        break;
+                    }
+                case "Rope":
+                    {
+                        textInfo.text = "Podniesiono linę";
+                        break;
+                    }
+                case "Shovel":
+                    {
+                        textInfo.text = "Podniesiono łopatę";
+                        break;
+                    }
 
             }
             anim.GetComponent<Animator>().Play("TextShowing");

@@ -8,13 +8,13 @@ public class PlacesController : MonoBehaviour
     // lista dostępnych miejsc
     public enum Place
     {
-        moving,
-        well,
-        shed,
-        beach,
-        house,
-        cementary,
-        park
+        Moving,
+        Well,
+        Shed,
+        Beach,
+        House,
+        Cementary,
+        Park
     }
 
     public HeroController player;
@@ -38,38 +38,38 @@ public class PlacesController : MonoBehaviour
 
             switch (place.ToString())
             {
-                case "shed":
+                case "Shed":
                     {
                         textInfo.text = "Odwiedzono szopę";
                         break;
                     }
-                case "house":
+                case "House":
                     {
                         textInfo.text = "Odwiedzono opuszczony dom";
                         break;
                     }
-                case "well":
+                case "Well":
                     {
                         textInfo.text = "Odwiedzono studnię";
                         break;
                     }
-                case "cementary":
+                case "Cementary":
                     {
                         textInfo.text = "Odwiedzono cmentarz";
                         break;
                     }
-                case "beach":
+                case "Beach":
                     {
                         textInfo.text = "Odwiedzono plażę";
                         break;
                     }
-                case "park":
+                case "Park":
                     {
                         textInfo.text = "Odwiedzono park";
                         break;
                     }
             }
-            StartCoroutine(Move(anim));
+            //StartCoroutine(Move(anim));
 
 
             anim.GetComponent<Animator>().Play("TextShowing");
@@ -79,7 +79,7 @@ public class PlacesController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
-            player.place = Place.moving.ToString();
+            player.place = Place.Moving.ToString();
     }
 
     IEnumerator Move(Animator anim)

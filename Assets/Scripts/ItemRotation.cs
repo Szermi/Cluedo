@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ItemRotation : MonoBehaviour
 {
+    public float x = 0.0f;
+    public float y = 0.0f;
+    public float z = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +17,6 @@ public class ItemRotation : MonoBehaviour
     void Update()
     {
         // Rotate the object
-        this.transform.Rotate(0.0f, 0.0f, 1.0f, Space.Self);
+        this.transform.Rotate(x, y, z, Space.Self);
     }
 }

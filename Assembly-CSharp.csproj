@@ -111,7 +111,6 @@
      <Compile Include="Assets\Scripts\DisplayImagesInInventory.cs" />
      <Compile Include="Assets\Scripts\DoorMove.cs" />
      <Compile Include="Assets\Scripts\DoorOpen.cs" />
-     <Compile Include="Assets\Scripts\DoorPush.cs" />
      <Compile Include="Assets\Scripts\HeroController.cs" />
      <Compile Include="Assets\Scripts\ItemPickingUp.cs" />
      <Compile Include="Assets\Scripts\ItemRotation.cs" />

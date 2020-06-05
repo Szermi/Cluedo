@@ -24,6 +24,13 @@ public class DisplayImagesInInventory : MonoBehaviour
     public GameObject shedImage;
     public GameObject wellImage;
 
+    //people
+    public GameObject pawelczakImage;
+    public GameObject zoltowskiImage;
+    public GameObject pastorskiImage;
+    public GameObject karmanImage;
+    public GameObject zielinskiImage;
+    public GameObject bartoszakImage;
 
     // Update is called once per frame
     void Update()
@@ -33,6 +40,7 @@ public class DisplayImagesInInventory : MonoBehaviour
 
         launchItems();
         launchPlaces();
+        launchPeople();
 
     }
 
@@ -102,4 +110,38 @@ public class DisplayImagesInInventory : MonoBehaviour
         else
             wellImage.SetActive(false);
     }
+
+    public void launchPeople()
+    {
+        if (player.peopleList.Contains("Pawelczak"))
+            pawelczakImage.SetActive(true);
+        else
+            pawelczakImage.SetActive(false);
+
+        if (player.peopleList.Contains("Żółtowski"))
+            zoltowskiImage.SetActive(true);
+        else
+            zoltowskiImage.SetActive(false);
+
+        if (player.peopleList.Contains("Pastorski"))
+            pastorskiImage.SetActive(true);
+        else
+            pastorskiImage.SetActive(false);
+
+        if (player.peopleList.Contains("Karman"))
+            karmanImage.SetActive(true);
+        else
+            karmanImage.SetActive(false);
+
+        if (player.peopleList.Contains("Zieliński"))
+            zielinskiImage.SetActive(true);
+        else
+            zielinskiImage.SetActive(false);
+
+        if (player.peopleList.Contains("Bartoszak"))
+            bartoszakImage.SetActive(true);
+        else
+            bartoszakImage.SetActive(false);
+    }
+
 }

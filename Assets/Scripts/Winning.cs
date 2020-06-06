@@ -8,7 +8,9 @@ public class Winning : MonoBehaviour
     private int chosenItem = 0;
     private int chosenPlace = 0;
     private int chosenPerson = 0;
+    private int counterToLose = 5;
     private int counterToDisplay = 0; //test
+    private bool theEnd = false;
     private GameObject image;
     Color whiteColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
     Color greenColor = new Color(0.2f, 1.0f, 0.0f, 1.0f);
@@ -23,6 +25,14 @@ public class Winning : MonoBehaviour
             clearAllSlots("ButtonItem");
             clearAllSlots("ButtonPlace");
             clearAllSlots("ButtonPerson");
+        }
+
+        if(GameObject.Find("JudgingButton") != null)
+        {
+            if (chosenItem == 0 || chosenPlace == 0 || chosenPerson == 0 || theEnd)
+                GameObject.Find("JudgingButton").GetComponent<Button>().interactable = false;
+            else
+                GameObject.Find("JudgingButton").GetComponent<Button>().interactable = true;
         }
     }
 
@@ -159,6 +169,28 @@ public class Winning : MonoBehaviour
             case "BartoszakImage": { chosenPerson = 6; break; }
 
             default: { print("Nie znaleziono nazwy"); break; }
+        }
+    }
+
+    public void winning()
+    {
+        Text judgingText = GameObject.Find("JudgingText").GetComponent<Text>();
+
+        if (chosenItem == 4 || chosenPlace == 2 || chosenPerson == 3)
+        {
+            judgingText.text = "Wygrana!";
+            theEnd = true;
+        }
+        else
+        {
+            counterToLose--;
+            if (counterToLose > 0)
+                judgingText.text = "Wybierz elementy i dokonaj osądu! (Pozostało prób: " + counterToLose.ToString() + ")";
+            else
+            {
+                judgingText.text = "Koniec gry";
+                theEnd = true;
+            }
         }
     }
  }

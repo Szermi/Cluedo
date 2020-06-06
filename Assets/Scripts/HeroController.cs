@@ -76,7 +76,6 @@ public class HeroController : MonoBehaviour
             aktualnaWysokoscSkoku += Physics.gravity.y * Time.deltaTime;
         }
 
-        Debug.Log(Physics.gravity.y);
 
         //Bieganie
         if (Input.GetKeyDown("left shift"))

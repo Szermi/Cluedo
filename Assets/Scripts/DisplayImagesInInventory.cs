@@ -32,6 +32,17 @@ public class DisplayImagesInInventory : MonoBehaviour
     public GameObject zielinskiImage;
     public GameObject bartoszakImage;
 
+    void Start()
+    {
+        //test
+        player.peopleList.Add("Pawelczak");
+        player.peopleList.Add("Żółtowski");
+        player.peopleList.Add("Pastorski");
+        player.peopleList.Add("Karman");
+        player.peopleList.Add("Zieliński");
+        player.peopleList.Add("Bartoszak");
+    }
+
     // Update is called once per frame
     void Update()
     {

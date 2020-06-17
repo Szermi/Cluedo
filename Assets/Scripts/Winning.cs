@@ -11,9 +11,15 @@ public class Winning : MonoBehaviour
     private int counterToLose = 5;
     private int counterToDisplay = 0; //test
     private bool theEnd = false;
+    private bool isExit = false;
     private GameObject image;
     Color whiteColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
     Color greenColor = new Color(0.2f, 1.0f, 0.0f, 1.0f);
+
+    public GameObject endBoard;
+    public GameObject exitBoard;
+    public Text endText;
+
 
     void Update()
     {
@@ -26,8 +32,43 @@ public class Winning : MonoBehaviour
             clearAllSlots("ButtonPlace");
             clearAllSlots("ButtonPerson");
         }
+        
+        if (Input.GetKeyDown("escape"))
+        {
+            if (theEnd)
+            {
+                #if UNITY_EDITOR
+                    // Application.Quit() does not work in the editor so
+                    // UnityEditor.EditorApplication.isPlaying need to be set to false to end the game
+                    UnityEditor.EditorApplication.isPlaying = false;
+                #else
+                    Application.Quit();
+                #endif
+            }
+            else if (!exitBoard.active)
+            {
+                exitBoard.SetActive(true);
+                isExit = true;
+            }
+            else
+            {
+                exitBoard.SetActive(false);
+                isExit = false;
+            }
+        }
 
-        if(GameObject.Find("JudgingButton") != null)
+        if (Input.GetKeyDown("return") && isExit)
+        {
+            #if UNITY_EDITOR
+                // Application.Quit() does not work in the editor so
+                // UnityEditor.EditorApplication.isPlaying need to be set to false to end the game
+                UnityEditor.EditorApplication.isPlaying = false;
+            #else
+                Application.Quit();
+            #endif
+        }
+
+        if (GameObject.Find("JudgingButton") != null)
         {
             if (chosenItem == 0 || chosenPlace == 0 || chosenPerson == 0 || theEnd)
                 GameObject.Find("JudgingButton").GetComponent<Button>().interactable = false;
@@ -176,8 +217,10 @@ public class Winning : MonoBehaviour
     {
         Text judgingText = GameObject.Find("JudgingText").GetComponent<Text>();
 
-        if (chosenItem == 4 || chosenPlace == 2 || chosenPerson == 3)
+        if (chosenItem == 2 && chosenPlace == 4 && chosenPerson == 3)
         {
+            endBoard.SetActive(true);
+            endText.text = "Gratulacje! Udało ci się połączyć wszystkie elementy. Wygrałeś!";
             judgingText.text = "Wygrana!";
             theEnd = true;
         }
@@ -188,6 +231,8 @@ public class Winning : MonoBehaviour
                 judgingText.text = "Wybierz elementy i dokonaj osądu! (Pozostało prób: " + counterToLose.ToString() + ")";
             else
             {
+                endBoard.SetActive(true);
+                endText.text = "Zbyt wiele razy dokonałeś fałszywego osądu. Nie jesteś tu mile widziany. Koniec gry.";
                 judgingText.text = "Koniec gry";
                 theEnd = true;
             }

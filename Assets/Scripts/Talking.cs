@@ -16,11 +16,13 @@ public class Talking : MonoBehaviour
     public GameObject textConvo1;
     public GameObject textConvo2;
     public GameObject textConvo3;
+    public GameObject textName;
 
     public Text Interaction;
     public Text Convo1;
     public Text Convo2;
     public Text Convo3;
+    public Text Name;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,7 @@ public class Talking : MonoBehaviour
         Convo1 = textConvo1.GetComponent<Text>();
         Convo2 = textConvo2.GetComponent<Text>();
         Convo3 = textConvo3.GetComponent<Text>();
+        Name = textName.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -61,6 +64,8 @@ public class Talking : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            Name.text = personName;
+            textName.SetActive(true);
             textInteraction.SetActive(true);
             inside = true;
         }
@@ -89,6 +94,8 @@ public class Talking : MonoBehaviour
     void AskForItem()
     {
         Clear();
+        textName.SetActive(true);
+
         if (personName == "Pawelczak")
             Convo1.text = "To na pewno nie była lina.";
         if (personName == "Żółtowski")
@@ -111,6 +118,8 @@ public class Talking : MonoBehaviour
     void AskForPlace()
     {
         Clear();
+        textName.SetActive(true);
+
         if (personName == "Pawelczak")
             Convo1.text = "Poszedłem do opuszczonego domu, nic tam się nie działo";
         if (personName == "Żółtowski")
@@ -133,6 +142,8 @@ public class Talking : MonoBehaviour
     void AskForPerson()
     {
         Clear();
+        textName.SetActive(true);
+
         if (personName == "Pawelczak")
             Convo1.text = "To na pewno nie Żółtowski, widziałem go wczoraj.";
         if (personName == "Żółtowski")
@@ -154,6 +165,7 @@ public class Talking : MonoBehaviour
 
     void Clear()
     {
+        textName.SetActive(false);
         textInteraction.SetActive(false);
         textConvo1.SetActive(false);
         textConvo2.SetActive(false);

@@ -21,6 +21,7 @@ public class ItemsRemoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown("1") && hero.itemsList.Contains("Bottle"))
         {
             Instantiate(bottlePrefab, new Vector3(hero.transform.position.x + 5, 1.5f, hero.transform.position.z), Quaternion.identity);
@@ -56,5 +57,6 @@ public class ItemsRemoving : MonoBehaviour
             Instantiate(ropePrefab, new Vector3(hero.transform.position.x + 5, 1.5f, hero.transform.position.z), Quaternion.identity);
             hero.itemsList.Remove("Rope");
         }
+        */
     }
 }

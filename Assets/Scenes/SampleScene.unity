@@ -1097,10 +1097,12 @@ MonoBehaviour:
   textConvo1: {fileID: 1069027796}
   textConvo2: {fileID: 1296232542}
   textConvo3: {fileID: 153110867}
+  textName: {fileID: 1065856065}
   Interaction: {fileID: 0}
   Convo1: {fileID: 0}
   Convo2: {fileID: 0}
   Convo3: {fileID: 0}
+  Name: {fileID: 0}
 --- !u!136 &80156806
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2443,6 +2445,7 @@ RectTransform:
   - {fileID: 1069027797}
   - {fileID: 1296232543}
   - {fileID: 153110868}
+  - {fileID: 1065856068}
   m_Father: {fileID: 1185379551}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3590,10 +3593,12 @@ MonoBehaviour:
   textConvo1: {fileID: 1069027796}
   textConvo2: {fileID: 1296232542}
   textConvo3: {fileID: 153110867}
+  textName: {fileID: 1065856065}
   Interaction: {fileID: 0}
   Convo1: {fileID: 0}
   Convo2: {fileID: 0}
   Convo3: {fileID: 0}
+  Name: {fileID: 0}
 --- !u!136 &326128525
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4541,7 +4546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3ad0d37169de043bebe82ce4caad8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 1.2, y: -5.625, z: -17.95}
+  targetPosition: {x: -0.1, y: -5.4, z: -18.44}
   speed: 1
 --- !u!65 &481358236
 BoxCollider:
@@ -5306,10 +5311,12 @@ MonoBehaviour:
   textConvo1: {fileID: 1069027796}
   textConvo2: {fileID: 1296232542}
   textConvo3: {fileID: 153110867}
+  textName: {fileID: 1065856065}
   Interaction: {fileID: 0}
   Convo1: {fileID: 0}
   Convo2: {fileID: 0}
   Convo3: {fileID: 0}
+  Name: {fileID: 0}
 --- !u!136 &559785699
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5572,15 +5579,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4150207490631304, guid: 2fff6ec7294274557a05c4d80d02630e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 93.921
+      value: 91.42
       objectReference: {fileID: 0}
     - target: {fileID: 4150207490631304, guid: 2fff6ec7294274557a05c4d80d02630e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.878
+      value: 3.75
       objectReference: {fileID: 0}
     - target: {fileID: 4150207490631304, guid: 2fff6ec7294274557a05c4d80d02630e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 138.318
+      value: 139.04
       objectReference: {fileID: 0}
     - target: {fileID: 4150207490631304, guid: 2fff6ec7294274557a05c4d80d02630e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8369,6 +8376,84 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300088, guid: 8d44a8bf542ec854ab6a6c818ea10b8a, type: 3}
+--- !u!1 &1065856065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1065856068}
+  - component: {fileID: 1065856067}
+  - component: {fileID: 1065856066}
+  m_Layer: 5
+  m_Name: TextName
+  m_TagString: Text
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1065856066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065856065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.8179005, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 33dca5bcb44fb704395714e38df39c89, type: 3}
+    m_FontSize: 21
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 164
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: (1) Zapytaj o przedmiot
+--- !u!222 &1065856067
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065856065}
+  m_CullTransparentMesh: 0
+--- !u!224 &1065856068
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065856065}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 196186455}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 974, y: 385}
+  m_SizeDelta: {x: 1200, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1069027796
 GameObject:
   m_ObjectHideFlags: 0
@@ -14446,10 +14531,12 @@ MonoBehaviour:
   textConvo1: {fileID: 1069027796}
   textConvo2: {fileID: 1296232542}
   textConvo3: {fileID: 153110867}
+  textName: {fileID: 1065856065}
   Interaction: {fileID: 0}
   Convo1: {fileID: 0}
   Convo2: {fileID: 0}
   Convo3: {fileID: 0}
+  Name: {fileID: 0}
 --- !u!136 &1163034235
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15892,10 +15979,12 @@ MonoBehaviour:
   textConvo1: {fileID: 1069027796}
   textConvo2: {fileID: 1296232542}
   textConvo3: {fileID: 153110867}
+  textName: {fileID: 1065856065}
   Interaction: {fileID: 0}
   Convo1: {fileID: 0}
   Convo2: {fileID: 0}
   Convo3: {fileID: 0}
+  Name: {fileID: 0}
 --- !u!136 &1360526254
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16511,7 +16600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402931979}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.32, y: -5.29, z: -18.212}
+  m_LocalPosition: {x: 2.29, y: -5.4, z: -18.44}
   m_LocalScale: {x: 0.26604617, y: 3.8473158, z: 2.216155}
   m_Children: []
   m_Father: {fileID: 1463218449}
@@ -21360,10 +21449,12 @@ MonoBehaviour:
   textConvo1: {fileID: 1069027796}
   textConvo2: {fileID: 1296232542}
   textConvo3: {fileID: 153110867}
+  textName: {fileID: 1065856065}
   Interaction: {fileID: 0}
   Convo1: {fileID: 0}
   Convo2: {fileID: 0}
   Convo3: {fileID: 0}
+  Name: {fileID: 0}
 --- !u!136 &2056245335
 CapsuleCollider:
   m_ObjectHideFlags: 0

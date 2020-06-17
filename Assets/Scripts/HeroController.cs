@@ -25,7 +25,7 @@ public class HeroController : MonoBehaviour
     private Rigidbody rb;
 
     // miejsce w ktorym znajduje sie gracz
-    // [HideInInspector]
+    [HideInInspector]
     public string place = "moving";
 
     [HideInInspector]

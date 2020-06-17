@@ -1,2 +1,18 @@
-Base path: 'C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/PlaybackEngines'
+Base path: 'F:/Programy/Unity/2019.3.13f1/Editor/Data', plugins path 'F:/Programy/Unity/2019.3.13f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+Cmd: preprocess
+  insize=4765 outsize=3133 ok=1
+Cmd: preprocess
+  insize=5761 outsize=3731 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (76): Automatically setting target of LOD_FADE_CROSSFADE to 3.0
+  insize=8269 outsize=5179 ok=1
+Cmd: preprocess
+  insize=3082 outsize=2429 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (58): Automatically setting target of LOD_FADE_CROSSFADE to 3.0
+  insize=5173 outsize=3948 ok=1
+Cmd: preprocess
+  insize=4770 outsize=3133 ok=1
+Cmd: preprocess
+  insize=5878 outsize=3854 ok=1
